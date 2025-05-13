@@ -1,0 +1,235 @@
+body {
+  background-image: url('https://wallpapers.com/images/hd/neon-iphone-whatsapp-f1a0enk27o03wk4x.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.contenido {
+  background-color: rgba(0, 0, 0, 0.6); /* semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+  /* CABECERA (header) */
+  header {
+    background: -webkit-linear-gradient(90deg, #00d5ff,#6dab9c,#0aff1b);
+    background: linear-gradient(90deg, #00d5ff,#6dab9c,#0aff1b);
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+
+  /* BARRA DE NAVEGACIÓN (nav) */
+  nav {
+    background-color: #40e5e8;
+    padding: 1em;
+    display: flex;
+    justify-content: left;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+  }
+
+  nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+
+  /* CUERPO PRINCIPAL (main) */
+  main {
+    display: flex;
+    padding: 20px;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  /* Sección de contenido */
+  section {
+    flex: 3;
+    background-color: rgb(226, 232, 234);
+    padding: 2em;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  section.active {
+    display: block;
+  }
+
+  /* Barra lateral */
+  aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-left: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  aside h3 {
+    margin-bottom: 1em;
+  }
+
+  aside ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  aside ul li {
+    margin-bottom: 1em;
+  }
+
+  footer {
+    background-color: #333333;
+    color: rgb(241, 235, 235);
+    text-align: center;
+    padding: 1em;
+  }
+
+  /* Estilos para formulario */
+  form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #7c3c3c;
+    border-radius: 4px;
+  }
+
+  form button {
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  form button:hover {
+    background-color: #45a049;
+  }
+
+  /* Estilos para la barra lateral de redes sociales */
+  aside a {
+    color: #0e100e;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  aside a:hover {
+    color: #181a18;
+  }
+
+  /* Color específico para los iconos de las redes sociales */
+  .facebook-icon {
+    color: #3b5998; /* Color de Facebook */
+  }
+
+  .instagram-icon {
+    color: #C13584; /* Color de Instagram */
+  }
+
+  /* Media Queries para diseño responsivo */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 10px 0;
+    }
+
+    main {
+      flex-direction: column;
+    }
+
+    aside {
+      margin-top: 20px;
+      border-left: none;
+      border-top: 1px solid #ddd;
+    }
+  }
+  
+  #contacto {
+    border: 2px solid #007BFF;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 20px auto;           /* Centrado y separación */
+    max-width: 600px;            /* Controla el ancho máximo */
+    width: 90%;                  /* Ancho relativo para pantallas pequeñas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Sombra suave (opcional) */
+  }
+  
+  #infoExtra {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  #infoExtra button {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #contenidoInfo {
+    display: none;  /* Oculto por defecto */
+  }
+  /* Contenedor principal con diseño de columnas */
+.contenido-con-layout {
+  display: flex;
+  flex-wrap: wrap;          /* Para que se adapte en pantallas pequeñas */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo para el contenido principal */
+.contenido-con-layout main {
+  flex: 3;
+  min-width: 300px;
+}
+
+/* Estilo para el aside lateral */
+#infoExtra {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  height: fit-content; /* Para que no se estire */
+}
+
+  #infoExtra {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+  
+    /* Sticky behavior */
+    position: sticky;
+    top: 20px;
+  }
+  
